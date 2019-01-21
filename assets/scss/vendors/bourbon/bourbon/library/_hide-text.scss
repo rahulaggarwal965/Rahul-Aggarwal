@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/// Hides the text in an element, commonly used to show an image instead. Some
+/// elements will need block-level styles applied.
+///
+/// @link https://goo.gl/EvLRIu
+///
+/// @example scss
+///   .element {
+///     @include hide-text;
+///   }
+///
+///   // CSS Output
+///   .element {
+///     overflow: hidden;
+///     text-indent: 101%;
+///     white-space: nowrap;
+///   }
+
+@mixin hide-text {
+  border: 0;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+}

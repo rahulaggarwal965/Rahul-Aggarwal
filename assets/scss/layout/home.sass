@@ -1,0 +1,18 @@
+.home
+  .flex
+    display: flex
+    flex-direction: row
+    align-items: stretch
+
+
+//columns
+.col-1
+  flex: 1
+
+@media (max-width: 1000px)
+  .home
+    .flex
+      display: block
+
+  .col-1
+    max-width: 100%

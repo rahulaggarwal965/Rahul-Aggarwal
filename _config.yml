@@ -1,0 +1,24 @@
+title: Rahul Aggarwal
+email: rahulaggarwal965@gmail.com
+description: >-
+  The portfolio of Rahul Aggarwal
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  rahulaggarwal965
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.kson
+  - node_modules
+  - gulpfile.js
+
+include:
+  - _pages
+
+keep_files:
+  - assets

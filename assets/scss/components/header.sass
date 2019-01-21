@@ -1,0 +1,80 @@
+.home .landing
+  header
+    .header-position
+      align-items: center
+      display: flex
+      justify-content: space-between
+      margin-top: 40px
+      h3
+        margin: 0px 0px 0px 40px
+        transition: font-size 200ms ease-in-out
+
+      .site-nav
+        ul
+          padding: 0
+          list-style: none
+          margin: 0px 40px 0px 0px
+          li
+            margin-left: 30px
+            transition: font-size 200ms ease-in-out
+            display: inline
+            &:first-child
+              margin-left: 0
+
+      .mobile-nav-toggle
+        display: none
+        width: 20px
+        height: 20px
+        margin-right: 20px
+        align-items: center
+
+        span,
+        span:before,
+        span:after,
+          content: ""
+          display: block
+          height: 2px
+          width: 100%
+          position: relative
+          background: white
+
+        span:before
+          top: 8px
+
+        span:after
+          bottom: 10px
+
+
+
+//Nav Buffer
+@media (max-width: 1300px)
+  .home .landing
+    header
+      .header-position
+        h3
+          font-size: 45px
+        .site-nav
+          ul
+            li
+              margin-left: 22px
+              //transform: translateX(-8px)
+              a
+                font-size: 19px
+
+
+@media (max-width: 1000px)
+  .home .landing
+    header
+      .header-position
+        margin-top: 20px
+        //transform: translateY(-20px)
+        h3
+          margin-left: 20px
+          //transform: translateX(-20px)
+          //transform: scale(0.5)
+          font-size: 30px
+        .site-nav
+          display: none
+
+        .mobile-nav-toggle
+          display: flex

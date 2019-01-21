@@ -1,0 +1,15 @@
+mixin interest(name, desc, cta)
+  .col-1
+    div(class=name)
+      .overlay
+      .interest-info
+        h1.interest-title= name
+        span
+        p.interest-desc= desc
+        a.interest-cta(href=name)= cta
+
+section.coding-writing-running
+  .flex
+    +interest('coding', 'Journey into an expansive world of numbers, code, passion, and a little bit of craziness. Find out just what makes me tick.', 'GO')
+    +interest('writing', 'Foray into a dangerous mind of secrets, mystery and perhaps the odd bit of eloquence. Truthfully, even I don’t completely understand it.', 'READ')
+    +interest('running', 'Leap headfirst into an ocean of pain etched with hard work and pure effort. Yet not even once have I thought of forsaking the challenge.', 'JUMP')

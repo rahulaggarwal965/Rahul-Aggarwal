@@ -1,0 +1,86 @@
+section.coding-writing-running
+  .coding
+    position: relative
+    background:
+      image: url('../img/code-pers-rahul-light-semidark-cropped.jpg')
+      size: cover
+      repeat: no-repeat
+      position: 50% 50%
+    height: 900px
+    &:hover
+      .overlay
+        opacity: 0.5
+      .interest-info
+        opacity: 1
+  .writing
+    position: relative
+    background:
+      image: url('../img/third-silence-writing-rahul-bw-raw-cropped.jpg')
+      size: cover
+      repeat: no-repeat
+      position: 50% 50%
+    height: 900px
+    &:hover
+      .overlay
+        opacity: 0.5
+      .interest-info
+        opacity: 1
+  .running
+    position: relative
+    background:
+      image: url('../img/rahul-running-bw-cropped.jpg')
+      size: cover
+      repeat: no-repeat
+      position: 50% 50%
+    height: 900px
+    &:hover
+      .overlay
+        opacity: 0.5
+      .interest-info
+        opacity: 1
+
+  .overlay
+    @include position(absolute, 0)
+    opacity: 0
+    transition: opacity 200ms ease-in-out
+    background-color: #000000
+  .interest-info
+    @include position(absolute, 0)
+    opacity: 0
+    transition: opacity 200ms ease-in-out
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .interest-title
+      text-align: center
+      letter-spacing: 7.5px
+      margin: 0 0 30px 0
+      transition: font-size 200ms ease-in-out
+    span
+      content: ""
+      display: block
+      height: 2px
+      width: 90px
+      background: white
+    .interest-desc
+      margin: 50px 0px
+      max-width: 300px
+      text-align: center
+    .interest-cta
+      color: white
+      font-family: 'Brandon Grotesque Regular'
+      font-size: 23px
+      text-align: center
+      padding: 10px 40px
+      letter-spacing: 2.3px
+      border: 2px solid white
+      border-radius: 3px
+
+@media (max-width: 1300px)
+    section.coding-writing-running
+      .interest-info
+        .interest-title
+          font-size: 75px
+        .interest-desc
+          max-width: 280px
